@@ -1,0 +1,79 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background:linear-gradient(150deg,blue,yellow);
+    position: relative;
+}
+.container{
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    min-height: 50vh;width: 45%;border-radius: 5vh;
+    padding: 6vh;
+}
+.name{
+    display: flex; align-items: center; gap: 3vh;
+}
+.name img{
+    height: 4vh;width: 4vh;object-fit: cover;
+}
+.row{
+    display: flex;margin-top: 5vh;
+    background:linear-gradient(150deg,rgba(129, 129, 177, 0.523),yellow);
+    height: 6vh;border-radius: 5vh;
+}
+input{
+    margin-left: 3vh;
+    flex: 1;border: none;outline: none;background: transparent;
+    font-size: 3vh;
+}
+.row button{
+    padding: 2vh;background-color: rgb(67, 221, 67);border: none;
+    outline: none;border-radius: 5vh;font-size: 2.5vh;
+    display: flex;color: white;
+    text-align: center;cursor: pointer;
+    align-items: center;
+}
+.row button:hover{
+    background-color: rgb(6, 247, 6);
+
+}
+ul li{
+    list-style: none;padding-top: 4vh;padding-left: 7vh;
+    position: relative;cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url("images/circle.jpg");
+    background-position: center;background-size: cover;
+    height: 4vh;width: 4vh;color: black;left: 2%;top: 53%;
+}
+ul li.checked{
+    color: rgb(105, 105, 183);text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("images/OIP.jpg");
+}
+ul li span{
+    position: absolute;
+    right: 0%;top: 3vh;width: 4vh;height: 4vh;font-size: 2vh;border-radius: 50%;
+    display: flex;align-items: center;justify-content: center;text-align: center;
+}
+ul li span:hover{
+    background-color: antiquewhite;
+}
